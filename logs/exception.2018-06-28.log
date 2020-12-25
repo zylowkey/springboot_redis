@@ -1,0 +1,3 @@
+09:35:00.923 231200 [http-nio-8090-exec-8] ERROR c.g.controller.PushDataController - 将表号:2018,推送至redis失败,失败原因:String index out of range: -6
+09:36:57.555 23067 [http-nio-8090-exec-1] ERROR c.g.controller.PushDataController - 将表号:201806280936,推送至redis失败,失败原因:Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+09:38:32.202 16079 [http-nio-8090-exec-2] ERROR c.g.controller.PushDataController - 将表号:201806280936,推送至redis失败,失败原因:Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool

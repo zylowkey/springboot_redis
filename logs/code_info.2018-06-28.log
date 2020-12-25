@@ -1,0 +1,268 @@
+09:31:10.488 765  [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 24532 (D:\testpace-new\XA_Redis\target\classes started by 1933 in D:\testpace-new\XA_Redis)
+09:31:10.490 767  [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+09:31:10.547 824  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e356b5b: startup date [Thu Jun 28 09:31:10 CST 2018]; root of context hierarchy
+09:31:10.967 1244 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+09:31:11.359 1636 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+09:31:11.801 2078 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$a7dab1fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:31:11.821 2098 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:31:11.822 2099 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$73766a51] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:31:12.579 2856 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+09:31:12.590 2867 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:31:12.591 2868 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+09:31:12.730 3007 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:31:12.730 3007 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2183 ms
+09:31:12.910 3187 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:31:12.916 3193 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:31:12.917 3194 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:31:12.918 3195 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:31:12.918 3195 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:31:13.588 3865 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e356b5b: startup date [Thu Jun 28 09:31:10 CST 2018]; root of context hierarchy
+09:31:13.674 3951 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+09:31:13.680 3957 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:31:13.680 3957 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:31:13.775 4052 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:31:13.775 4052 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:31:13.831 4108 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:31:14.327 4604 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:31:14.369 4646 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+09:31:14.379 4656 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+09:31:14.395 4672 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:31:14.424 4701 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+09:31:14.432 4709 [main] INFO  com.goldcard.Main - Started Main in 4.339 seconds (JVM running for 4.902)
+09:31:48.629 38906 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:31:48.629 38906 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:31:48.659 38936 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+09:31:48.819 39096 [http-nio-8090-exec-1] INFO  c.g.controller.PushDataController - 将表号:201806211420,推送至redis成功
+09:34:55.281 225558 [http-nio-8090-exec-3] INFO  c.g.controller.PushDataController - 将表号:201806211420,推送至redis成功
+09:34:56.496 226773 [http-nio-8090-exec-4] INFO  c.g.controller.PushDataController - 将表号:201806211420,推送至redis成功
+09:34:57.356 227633 [http-nio-8090-exec-5] INFO  c.g.controller.PushDataController - 将表号:201806211420,推送至redis成功
+09:35:00.923 231200 [http-nio-8090-exec-8] ERROR c.g.controller.PushDataController - 将表号:2018,推送至redis失败,失败原因:String index out of range: -6
+09:36:35.276 788  [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 23440 (D:\testpace-new\XA_Redis\target\classes started by 1933 in D:\testpace-new\XA_Redis)
+09:36:35.279 791  [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+09:36:35.338 850  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bffc401: startup date [Thu Jun 28 09:36:35 CST 2018]; root of context hierarchy
+09:36:35.749 1261 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+09:36:36.082 1594 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+09:36:36.505 2017 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$c5222411] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:36:36.526 2038 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:36:36.527 2039 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$90bddc68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:36:37.274 2786 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+09:36:37.284 2796 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:36:37.285 2797 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+09:36:37.397 2909 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:36:37.397 2909 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2059 ms
+09:36:37.582 3094 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:36:37.587 3099 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:36:37.588 3100 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:36:37.588 3100 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:36:37.588 3100 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:36:38.154 3666 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4bffc401: startup date [Thu Jun 28 09:36:35 CST 2018]; root of context hierarchy
+09:36:38.224 3736 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+09:36:38.227 3739 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:36:38.227 3739 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:36:38.261 3773 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:36:38.262 3774 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:36:38.329 3841 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:36:38.847 4359 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:36:38.900 4412 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+09:36:38.913 4425 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+09:36:38.932 4444 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:36:38.960 4472 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+09:36:38.967 4479 [main] INFO  com.goldcard.Main - Started Main in 4.1 seconds (JVM running for 4.653)
+09:36:55.191 20703 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:36:55.191 20703 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:36:55.232 20744 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+09:36:57.555 23067 [http-nio-8090-exec-1] ERROR c.g.controller.PushDataController - 将表号:201806280936,推送至redis失败,失败原因:Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+09:38:16.779 656  [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 19120 (D:\testpace-new\XA_Redis\target\classes started by 1933 in D:\testpace-new\XA_Redis)
+09:38:16.781 658  [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+09:38:16.833 710  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@608b80c3: startup date [Thu Jun 28 09:38:16 CST 2018]; root of context hierarchy
+09:38:17.227 1104 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+09:38:17.601 1478 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+09:38:17.996 1873 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$f996b2e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:38:18.019 1896 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:38:18.020 1897 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$c5326b3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:38:18.779 2656 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+09:38:18.792 2669 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:38:18.793 2670 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+09:38:18.916 2793 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:38:18.916 2793 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2083 ms
+09:38:19.131 3008 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:38:19.138 3015 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:38:19.139 3016 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:38:19.139 3016 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:38:19.139 3016 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:38:19.746 3623 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@608b80c3: startup date [Thu Jun 28 09:38:16 CST 2018]; root of context hierarchy
+09:38:19.820 3697 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+09:38:19.824 3701 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:38:19.825 3702 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:38:19.855 3732 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:38:19.855 3732 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:38:19.914 3791 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:38:20.438 4315 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:38:20.505 4382 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+09:38:20.521 4398 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+09:38:20.541 4418 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:38:20.574 4451 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+09:38:20.582 4459 [main] INFO  com.goldcard.Main - Started Main in 4.157 seconds (JVM running for 4.569)
+09:38:29.858 13735 [http-nio-8090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:38:29.858 13735 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:38:29.886 13763 [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+09:38:32.202 16079 [http-nio-8090-exec-2] ERROR c.g.controller.PushDataController - 将表号:201806280936,推送至redis失败,失败原因:Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+09:39:06.675 689  [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 22804 (D:\testpace-new\XA_Redis\target\classes started by 1933 in D:\testpace-new\XA_Redis)
+09:39:06.678 692  [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+09:39:06.734 748  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@534041ec: startup date [Thu Jun 28 09:39:06 CST 2018]; root of context hierarchy
+09:39:07.131 1145 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+09:39:07.438 1452 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+09:39:07.830 1844 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$355ad673] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:39:07.846 1860 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:39:07.846 1860 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f68eca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:39:08.488 2502 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+09:39:08.498 2512 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:39:08.499 2513 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+09:39:08.608 2622 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:39:08.608 2622 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1874 ms
+09:39:08.788 2802 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+09:39:08.791 2805 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+09:39:08.791 2805 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+09:39:08.791 2805 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+09:39:08.792 2806 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+09:39:09.451 3465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@534041ec: startup date [Thu Jun 28 09:39:06 CST 2018]; root of context hierarchy
+09:39:09.546 3560 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+09:39:09.549 3563 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:39:09.550 3564 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:39:09.590 3604 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:39:09.591 3605 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:39:09.652 3666 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:39:10.165 4179 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+09:39:10.227 4241 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+09:39:10.239 4253 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+09:39:10.256 4270 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+09:39:10.284 4298 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+09:39:10.290 4304 [main] INFO  com.goldcard.Main - Started Main in 3.992 seconds (JVM running for 4.408)
+09:39:14.490 8504 [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+09:39:14.490 8504 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+09:39:14.520 8534 [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+09:39:14.649 8663 [http-nio-8090-exec-1] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:16.162 10176 [http-nio-8090-exec-2] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:16.820 10834 [http-nio-8090-exec-3] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:17.332 11346 [http-nio-8090-exec-4] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:17.744 11758 [http-nio-8090-exec-5] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:18.127 12141 [http-nio-8090-exec-6] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:18.406 12420 [http-nio-8090-exec-7] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:18.628 12642 [http-nio-8090-exec-8] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:18.860 12874 [http-nio-8090-exec-9] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:19.023 13037 [http-nio-8090-exec-10] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:19.235 13249 [http-nio-8090-exec-2] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:19.499 13513 [http-nio-8090-exec-3] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:39:19.704 13718 [http-nio-8090-exec-4] INFO  c.g.controller.PushDataController - 将表号:201806280936,推送至redis成功
+09:40:03.293 304  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.goldcard.controller.PushDataControllerTest], using SpringBootContextLoader
+09:40:03.300 311  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.goldcard.controller.PushDataControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:40:03.392 403  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+09:40:03.424 435  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5e7175af, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6ae56499, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7a2fafa2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@50b3f359, org.springframework.test.context.transaction.TransactionalTestExecutionListener@562d8173, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@458dd138, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@61a2d734, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@9dec900, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@15e2410, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b919723, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4359a197, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@317fe30c]
+09:40:03.437 448  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.goldcard.controller.PushDataControllerTest], using SpringBootContextLoader
+09:40:03.438 449  [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.goldcard.controller.PushDataControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:40:03.472 483  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+09:40:03.475 486  [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2c1887b7, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7e7615fe, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7a9e178e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@211caa86, org.springframework.test.context.transaction.TransactionalTestExecutionListener@60ff5465, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1afde4a3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@12ad972d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@42a014ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1bbe7915, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@75ff5fed, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@50f2fd20, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@c86965]
+09:40:03.929 940  [main] INFO  c.g.c.PushDataControllerTest - Starting PushDataControllerTest on JKHZLT0335-2017 with PID 23156 (started by 1933 in D:\testpace-new\XA_Redis)
+09:40:03.929 940  [main] INFO  c.g.c.PushDataControllerTest - No active profile set, falling back to default profiles: default
+09:40:03.965 976  [main] INFO  o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5d3cf8b2: startup date [Thu Jun 28 09:40:03 CST 2018]; root of context hierarchy
+09:40:04.389 1400 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+09:40:04.797 1808 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+09:40:05.234 2245 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$ee6ae4d6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:40:05.253 2264 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:40:05.254 2265 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$ba069d2d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+09:40:06.218 3229 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5d3cf8b2: startup date [Thu Jun 28 09:40:03 CST 2018]; root of context hierarchy
+09:40:06.311 3322 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+09:40:06.314 3325 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+09:40:06.315 3326 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+09:40:06.358 3369 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:40:06.359 3370 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:40:06.405 3416 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+09:40:06.892 3903 [main] INFO  c.g.c.PushDataControllerTest - Started PushDataControllerTest in 3.336 seconds (JVM running for 4.137)
+09:40:06.942 3953 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+09:40:06.943 3954 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+09:40:06.957 3968 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 14 ms
+09:40:07.074 4085 [main] INFO  c.g.controller.PushDataController - ������:201806200925,������redis�ɹ�
+09:40:07.151 4162 [Thread-2] INFO  o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@5d3cf8b2: startup date [Thu Jun 28 09:40:03 CST 2018]; root of context hierarchy
+10:37:58.384 750  [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 9796 (D:\testpace-new\XA_Redis\target\classes started by 1933 in D:\testpace-new\XA_Redis)
+10:37:58.386 752  [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+10:37:58.441 807  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20913236: startup date [Thu Jun 28 10:37:58 CST 2018]; root of context hierarchy
+10:37:58.858 1224 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:37:59.150 1516 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:37:59.542 1908 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$b87b5b0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:37:59.561 1927 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:37:59.562 1928 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$84171361] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:38:00.294 2660 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+10:38:00.304 2670 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:38:00.305 2671 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:38:00.409 2775 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:38:00.410 2776 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1969 ms
+10:38:00.589 2955 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:38:00.593 2959 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:38:00.593 2959 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:38:00.594 2960 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:38:00.594 2960 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:38:01.136 3502 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@20913236: startup date [Thu Jun 28 10:37:58 CST 2018]; root of context hierarchy
+10:38:01.211 3577 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+10:38:01.215 3581 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:38:01.216 3582 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:38:01.257 3623 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:01.257 3623 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:01.313 3679 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:01.768 4134 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:38:01.843 4209 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+10:38:01.859 4225 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+10:38:01.916 4282 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:38:01.956 4322 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+10:38:01.963 4329 [main] INFO  com.goldcard.Main - Started Main in 3.974 seconds (JVM running for 4.485)
+10:38:13.615 541  [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 24376 (D:\testpace-new\XA_Redis\target\classes started by 1933 in D:\testpace-new\XA_Redis)
+10:38:13.617 543  [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+10:38:13.665 591  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32f4236c: startup date [Thu Jun 28 10:38:13 CST 2018]; root of context hierarchy
+10:38:13.935 861  [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:38:14.331 1257 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:38:14.680 1606 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$e6d2f8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:38:14.701 1627 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:38:14.701 1627 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$da08e7e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:38:15.167 2093 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+10:38:15.179 2105 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:38:15.180 2106 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:38:15.267 2193 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:38:15.267 2193 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1603 ms
+10:38:15.467 2393 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:38:15.470 2396 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:38:15.471 2397 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:38:15.471 2397 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:38:15.471 2397 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:38:16.043 2969 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32f4236c: startup date [Thu Jun 28 10:38:13 CST 2018]; root of context hierarchy
+10:38:16.107 3033 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+10:38:16.111 3037 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:38:16.112 3038 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:38:16.149 3075 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:16.149 3075 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:16.202 3128 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:38:16.594 3520 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:38:16.653 3579 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+10:38:16.663 3589 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+10:38:16.680 3606 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:38:16.706 3632 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+10:38:16.713 3639 [main] INFO  com.goldcard.Main - Started Main in 3.398 seconds (JVM running for 4.079)
+10:38:24.490 11416 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+10:38:24.490 11416 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32f4236c: startup date [Thu Jun 28 10:38:13 CST 2018]; root of context hierarchy
+10:38:24.493 11419 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:38:59.541 831  [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 23796 (D:\testpace-new\XA_Redis\target\classes started by 1933 in D:\testpace-new\XA_Redis)
+10:38:59.544 834  [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+10:38:59.615 905  [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@23a35b19: startup date [Thu Jun 28 10:38:59 CST 2018]; root of context hierarchy
+10:39:00.051 1341 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+10:39:00.333 1623 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+10:39:00.736 2026 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$85c6f1d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:39:00.752 2042 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:39:00.753 2043 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$5162aa2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+10:39:01.419 2709 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+10:39:01.428 2718 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:39:01.430 2720 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+10:39:01.542 2832 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:39:01.542 2832 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1927 ms
+10:39:01.715 3005 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:39:01.719 3009 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:39:01.720 3010 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:39:01.720 3010 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:39:01.720 3010 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]

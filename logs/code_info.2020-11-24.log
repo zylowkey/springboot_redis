@@ -1,0 +1,36 @@
+16:43:19.208 1131 [main] INFO  com.goldcard.Main - Starting Main on JKHZLT0335-2017 with PID 13484 (D:\testpace-new\XA_Redis\target\classes started by G001933 in D:\testpace-new\XA_Redis)
+16:43:19.208 1131 [main] INFO  com.goldcard.Main - No active profile set, falling back to default profiles: default
+16:43:19.328 1251 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13d5047e: startup date [Tue Nov 24 16:43:19 CST 2020]; root of context hierarchy
+16:43:20.208 2131 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+16:43:20.469 2392 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+16:43:20.909 2832 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'redisConfig' of type [com.goldcard.config.RedisConfig$$EnhancerBySpringCGLIB$$6726184b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:43:20.939 2862 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'keyGenerator' of type [com.goldcard.config.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:43:20.939 2862 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$32c1d0a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+16:43:22.373 4296 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+16:43:22.384 4307 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:43:22.384 4307 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+16:43:22.564 4487 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:43:22.564 4487 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3236 ms
+16:43:22.834 4757 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:43:22.834 4757 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:43:22.834 4757 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:43:22.834 4757 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:43:22.844 4767 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:43:23.544 5467 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@13d5047e: startup date [Tue Nov 24 16:43:19 CST 2020]; root of context hierarchy
+16:43:23.634 5557 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/meterno/{meterno}],methods=[POST]}" onto public com.goldcard.dto.Results com.goldcard.controller.PushDataController.addToRedis(java.lang.String)
+16:43:23.634 5557 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:43:23.634 5557 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:43:23.674 5597 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:43:23.674 5597 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:43:23.734 5657 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:43:24.622 6545 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:43:24.752 6675 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+16:43:25.522 7445 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+16:43:25.592 7515 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:43:25.844 7767 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+16:43:25.854 7777 [main] INFO  com.goldcard.Main - Started Main in 7.257 seconds (JVM running for 7.937)
+16:43:49.925 31848 [http-nio-8090-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:43:49.925 31848 [http-nio-8090-exec-5] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:43:49.956 31879 [http-nio-8090-exec-5] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+16:43:50.306 32229 [http-nio-8090-exec-5] INFO  c.g.controller.PushDataController - 将表号:281709218358,推送至redis成功
+16:43:50.776 32699 [http-nio-8090-exec-3] INFO  c.g.controller.PushDataController - 将表号:281709218358,推送至redis成功

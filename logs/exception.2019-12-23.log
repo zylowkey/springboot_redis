@@ -1,0 +1,2 @@
+13:58:16.325 66004 [http-nio-8090-exec-1] ERROR c.g.controller.PushDataController - 将表号:201912231358,推送至redis失败,失败原因:NOAUTH Authentication required.; nested exception is redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.
+13:59:50.691 70111 [http-nio-8090-exec-1] ERROR c.g.controller.PushDataController - 将表号:201912231358,推送至redis失败,失败原因:NOAUTH Authentication required.; nested exception is redis.clients.jedis.exceptions.JedisDataException: NOAUTH Authentication required.
